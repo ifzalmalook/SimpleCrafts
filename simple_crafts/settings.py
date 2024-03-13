@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ifzalmalook-simplecraft-aoxd1419g49.ws-eu109.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ifzalmalook-simplecraft-aoxd1419g49.ws-eu110.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'projects',
+    'home',
 ]
 
 MIDDLEWARE = [
