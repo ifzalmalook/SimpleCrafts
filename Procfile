@@ -1,1 +1,1 @@
-gunicorn simple_crafts.wsgi
+web: gunicorn simple_crafts.wsgi
