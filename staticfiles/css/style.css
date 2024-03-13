@@ -1,4 +1,8 @@
-* {
-    background-color: red;
-    color: white;
+body {
+    background-color: rgb(68, 0, 255);
+    color: purple;
+}
+
+nav {
+    background-color: #bad4aa;
 }
