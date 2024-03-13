@@ -96,13 +96,20 @@ In this section, you should go over the different parts of your project, and des
 
 ![Homepage](static/images/homepagewire.png)
 
+![List View](static/images/listwire.png)
+
+![Detail View](static/images/detailwire.png)
 
 
-![List page]()
+
+# Database ERD
+
+![ERD](static/images/ERD.png)
 
 
 
-![Detail Page]()
+
+
 
 
 
