@@ -33,6 +33,10 @@ main {
     flex: 1 0 auto;
 }
 
+.form-check {
+    margin: 0;
+}
+
 footer {
     flex-shrink: 0; 
 }
