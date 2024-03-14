@@ -1,8 +1,38 @@
-body {
-    background-color: rgb(68, 0, 255);
-    color: purple;
+
+
+/* Navbar */
+nav, footer {
+    background-color: #bad4aa;
 }
 
-nav {
-    background-color: #bad4aa;
+/* Keep footer at bottom */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: purple;
+
+}
+
+.inline-p {
+    display: inline;
+}
+
+.fab {
+    width: 20px;
+    height: 20px;
+
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0; 
 }
