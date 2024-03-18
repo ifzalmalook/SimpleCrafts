@@ -22,3 +22,9 @@ class Project(models.Model):
     image = CloudinaryField ('image', default='placeholder')
     published_on = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['-published_on']
+
+    def __string__(self):
+        return str(self.title)
