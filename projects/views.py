@@ -1,9 +1,11 @@
+from django.contrib import messages
 from django.shortcuts import render
 from django.views.generic import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Project
 from .forms import ProjectForm
 from django.urls import path, reverse_lazy
+from django.utils.text import slugify
 
 # Create your views here.
 
