@@ -48,12 +48,14 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'cloudinary_storage',
     'cloudinary',
-    'projects',
-    'home',
+    
 
     #other
     'crispy_forms',
     'crispy_bootstrap5',
+    'djrichtextfield',
+    'projects',
+    'home',
 ]
 
 SITE_ID = 1
