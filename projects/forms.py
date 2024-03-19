@@ -4,13 +4,26 @@ from .models import Project
 
 
 class ProjectForm(forms.ModelForm):
+    materials = forms.CharField(widget=RichTextWidget())
+    steps = forms.CharField(widget=RichTextWidget())
+
     class Meta:
         model = Project
-        fields = ['title', 'description', 'materials', 'steps', 'image', 'category' ]
-
-        materials = forms.CharField(widget=RichTextWidget())
-        steps = forms.CharField(widget=RichTextWidget())
-
+        fields = ['title', 'description', 'materials', 'steps', 'image', 'category']
         widgets = {
             'description': forms.Textarea(attrs={'rows': 5}),
         }
+
+# class ProjectForm(forms.ModelForm):
+#     class Meta:
+#         model = Project
+#         fields = ['title', 'description', 'materials', 'steps', 'image', 'category' ]
+
+#         materials = forms.CharField(widget=RichTextWidget())
+#         steps = forms.CharField(widget=RichTextWidget())
+
+#         widgets = {
+#             'description': forms.Textarea(attrs={'rows': 5}),
+#         }
+
+

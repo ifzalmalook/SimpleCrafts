@@ -1,11 +1,12 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import CreateView, ListView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import (CreateView, ListView, DeleteView)
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Project
 from .forms import ProjectForm
 from django.urls import path, reverse_lazy
 from django.utils.text import slugify
+from django.views import generic, View
 
 # Create your views here.
 
@@ -37,6 +38,14 @@ class AddProject(LoginRequiredMixin, CreateView):
         form.instance.slug = slugify(form.instance.title)
         messages.success(self.request, "Your project has been added!")
         return super(AddProject, self).form_valid(form)
+    
+    # def form_invalid(self, form):
+    #     # Form is not valid, render the form page with validation errors
+    #     messages.error(self.request, 'Please correct the errors below.')
+    #     return render(self.request, self.template_name, {'form': form})
+
+
+      
 
 def full_project(request, slug):
     """
@@ -52,3 +61,16 @@ def full_project(request, slug):
         "projects/full_project.html",
         {"project": project}  # Use the correct variable name here
     )
+
+class DeleteProject(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Project
+    success_url = reverse_lazy('projects')
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
+
+    #add success message
+    def form_valid(self, form):
+        # If the form is valid, display a success message
+        messages.success(self.request, 'The project has been removed!')
+        return super().form_valid(form)
