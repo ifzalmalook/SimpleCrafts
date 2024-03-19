@@ -20,6 +20,7 @@ class Projects(ListView):
     queryset = Project.objects.all()
     template_name = 'projects/projects_list.html'
     model = Project   
+    paginate_by = 6
 
 class AddProject(LoginRequiredMixin, CreateView):
     """

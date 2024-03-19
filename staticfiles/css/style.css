@@ -1,7 +1,7 @@
 
 
 /* Navbar */
-nav, footer {
+.nav-color, footer {
     background-color: #E6CCFF;
 }
 
@@ -74,4 +74,22 @@ footer {
 
 .add-form button {
     margin-bottom: 0.5rem;
+}
+
+/* Styling for full_project */
+
+.full-image {
+    max-height: 500px;
+    
+}
+
+/* Fix text overflow */
+
+.step-box {
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.pagination {
+    background-color: none;
 }
