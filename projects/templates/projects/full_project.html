@@ -27,7 +27,7 @@
                 
                 {% if request.user == project.author %}
                 <div class ="crud text-center">
-                
+                <a href="{% url 'edit_project' project.slug %}">Edit</a>
                 <a href="{% url 'delete_project' project.slug %}">Delete</a>
 
                 </div>

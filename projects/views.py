@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import (CreateView, ListView, DeleteView)
+from django.views.generic import (CreateView, ListView, DeleteView, UpdateView)
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Project
 from .forms import ProjectForm
@@ -73,4 +73,19 @@ class DeleteProject(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def form_valid(self, form):
         # If the form is valid, display a success message
         messages.success(self.request, 'The project has been removed!')
+        return super().form_valid(form)
+
+class EditProject(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    template_name = 'projects/edit_project.html'
+    model = Project
+    form_class = ProjectForm
+    success_url = reverse_lazy('projects')
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
+
+    #add success message
+    def form_valid(self, form):
+        # If the form is valid, display a success message
+        messages.success(self.request, 'Your project has been updated!')
         return super().form_valid(form)
