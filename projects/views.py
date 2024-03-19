@@ -2,6 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import (CreateView, ListView, DeleteView, UpdateView)
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.db.models import Q
 from .models import Project
 from .forms import ProjectForm
 from django.urls import path, reverse_lazy
@@ -22,6 +23,22 @@ class Projects(ListView):
     template_name = 'projects/projects_list.html'
     model = Project   
     paginate_by = 6
+
+    def get_queryset(self, **kwargs):
+        search = self.request.GET.get("query")
+        if search:
+            projects = self.model.objects.filter(
+                Q(title__icontains=search)|
+                Q(description__icontains=search)|
+                Q(category__name__icontains=search) #search relating to a foreign key
+
+            )
+
+            return projects
+        
+        else:
+
+            return self.model.objects.all()
 
 class AddProject(LoginRequiredMixin, CreateView):
     """
