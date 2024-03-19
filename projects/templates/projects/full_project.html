@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 
-                <div class="text-center masthead masthead-text">
+                <div class="text-center masthead masthead-text pt-2">
                 <!-- Project title goes in these h1 tags -->
                 <h1 class="project-title">{{ project.title }}</h1>
                 <!-- Project author goes before the | the project's created date goes after -->
@@ -32,7 +32,7 @@
 
                 </div>
                 {% endif %}
-                
+                <hr>
                 
                 
                 <div class = "row justify-content-center step-box ms-1">
@@ -57,6 +57,7 @@
         <div class="row">
             <div class="col-10 ms-3 step-box">
                 <div class="text-box">
+                    <h1 class="text-center">Steps</h1>
                 <p>{{project.steps|safe}}</p>
                 </div>
             </div>

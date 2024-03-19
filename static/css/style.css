@@ -102,3 +102,20 @@ footer {
 hr {
     border: solid 2px purple;
 }
+
+/* Porject page title styling */
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #E6CCFF;
+    color: black;
+    position: relative;
+}

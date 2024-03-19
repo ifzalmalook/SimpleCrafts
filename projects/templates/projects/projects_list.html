@@ -31,7 +31,8 @@
                             <div class="image-container">
                                 <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
                                 <p class="author text-center">Author: {{ project.author }}</p>
-                                <p class="card-text text-muted h6 text-center">{{ project.published_on }}</p>
+                                <p class="text-center">Category: {{project.category}}</p>
+                                <p class="card-text text-muted h6 text-center">Published: {{ project.published_on }}</p>
                             </div>
                             <div class = "text-center" >
                                 <a href="{% url 'full_project' project.slug %}" class="post-link"> {# Update URL to 'full_project' with project.slug #}
