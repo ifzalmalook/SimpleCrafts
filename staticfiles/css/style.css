@@ -69,3 +69,9 @@ footer {
     display: inline-block;
     padding: 8px 16px;
 }
+
+/* form styling */
+
+.add-form button {
+    margin-bottom: 0.5rem;
+}
