@@ -17,24 +17,24 @@
 {% endif %}
 
 <h1 class="text-center">Latest Projects</h1>
-<!-- index.html content starts here -->
+
 <div class="container-fluid">
     <div class="row">
         <!-- Project Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for project in object_list %} {# Update variable name to 'project' #}
+                {% for project in object_list %} 
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
                                 <p class="author text-center">Author: {{ project.author }}</p>
-                                <p class="card-text text-muted h6">{{ project.published_on }}</p>
+                                <p class="card-text text-muted h6 text-center">{{ project.published_on }}</p>
                             </div>
                             <div class = "text-center" >
                                 <a href="#" class="post-link"> {# Update URL to 'full_project' with project.slug #}
-                                    <h2 class="card-title clickable">{{ project.title }}</h2>
+                                    <h2 class="card-title clickable mt-2">{{ project.title }}</h2>
                                     <p class="card-text">{{ project.description|truncatechars:100 }}</p>
                                 </a>
                             </div>

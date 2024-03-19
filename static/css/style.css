@@ -2,7 +2,7 @@
 
 /* Navbar */
 nav, footer {
-    background-color: #bad4aa;
+    background-color: #E6CCFF;
 }
 
 /* Keep footer at bottom */
@@ -52,9 +52,20 @@ footer {
 
 /* Styling for card border */
 
-.card-body {
+.card {
     border: 5px solid #E6CCFF;
     /* height: 600px; */
     box-shadow: 0px 4px 8px #E6CCFF;
     border-radius: 10px;
+}
+
+/* style card titles in to buttons */
+
+.clickable {
+    background-color: #E6CCFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
 }

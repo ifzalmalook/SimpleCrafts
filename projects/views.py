@@ -36,3 +36,18 @@ class AddProject(LoginRequiredMixin, CreateView):
         form.instance.slug = slugify(form.instance.title)
         messages.success(self.request, "Your project has been added!")
         return super(AddProject, self).form_valid(form)
+
+def full_project(request, slug):
+    """
+    View full project details
+    """
+    
+    queryset = Project.objects.filter(slug=slug)
+    project = get_object_or_404(queryset, slug=slug)
+    
+    # Pass the project object to the template context
+    return render(
+        request,
+        "projects/full_project.html",
+        {"project": project}  # Use the correct variable name here
+    )
