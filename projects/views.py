@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Project
 from .forms import ProjectForm
@@ -11,6 +11,15 @@ from django.utils.text import slugify
 
 def home(request):
     return render(request, 'home.html')
+
+
+class Projects(ListView):
+    """
+    List of Projects
+    """
+    queryset = Project.objects.all()
+    template_name = 'projects/projects_list.html'
+    model = Project   
 
 class AddProject(LoginRequiredMixin, CreateView):
     """

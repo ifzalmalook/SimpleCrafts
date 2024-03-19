@@ -40,3 +40,23 @@ main {
 footer {
     flex-shrink: 0; 
 }
+
+/* Styling for project list */
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #188181;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
