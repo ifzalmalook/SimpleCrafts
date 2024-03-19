@@ -28,17 +28,13 @@ class Projects(ListView):
         search = self.request.GET.get("query")
         if search:
             projects = self.model.objects.filter(
-                Q(title__icontains=search)|
-                Q(description__icontains=search)|
-                Q(category__name__icontains=search) #search relating to a foreign key
-
+                Q(title__icontains=search) |
+                Q(description__icontains=search) |
+                Q(category__name__icontains=search)  # search relating to a foreign key
             )
-
             return projects
-        
         else:
-
-            return self.model.objects.all()
+            return Project.objects.all() 
 
 class AddProject(LoginRequiredMixin, CreateView):
     """

@@ -23,6 +23,7 @@
         <!-- Project Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+            {% if object_list %}   <!-- If statement related to no search results found -->
                 {% for project in object_list %} 
                 <div class="col-md-4">
                     <div class="card mb-4">
@@ -43,6 +44,14 @@
                     </div>
                 </div>
                 {% endfor %}
+                <!-- If search terms not found -->
+            {% else %}
+                <div class="col text-center">
+                    <h2 class="text-center">No projects found.</h2>
+                    <a href="{% url 'projects' %}" class="btn btn-primary text-center" > Back </a>
+                </div>
+            {% endif %}
+
             </div>
         </div>
     </div>
