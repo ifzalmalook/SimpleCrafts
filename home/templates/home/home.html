@@ -23,10 +23,20 @@
     </div>
 </div>
 
+<div class="container flex-column pt-3 ">
+    <section class="text-center">
+        <p class="pt-4">
+            Welcome to Simple Crafts, your ultimate destination for all things crafting! Dive into a world of endless creativity where imagination knows no bounds. Whether you're a seasoned artisan or just starting your crafting journey, our platform offers a treasure trove of inspiration, tutorials, and support to fuel your passion. From DIY projects to expert tips, discover the joy of crafting and let your creativity flourish with us. Join our vibrant community today and unlock the endless possibilities of handmade beauty!
+        </p>
+    </section>
+
+
+
 <section>
    
     
     <div class="row project-container">
+        
         <h1 class="text-center">Below are some of our latest projects</h1>
         <h2 class="text-center">Create an account today:</h2>
         <div class="row">
@@ -39,9 +49,10 @@
         </div>
         {% for project in object_list %}
             <div class="col-md-4">
-                <div class="mt-2 mb-2 ms-2 me-2">
-                    <a href="{% url 'full_project' project.slug %}">
+                <div class="mt-2 mb-2 ms-2 me-2 text-center">
+                    <a href="{% url 'full_project' project.slug %}" class="home-images">
                         <img src="{{ project.image.url }}" alt="image of {{ project.title }}" style="width:100%">
+                        <div class="centered">{{project.title}}</div>
                     </a>   
                 </div>
             </div>

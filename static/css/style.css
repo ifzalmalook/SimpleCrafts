@@ -160,7 +160,7 @@ hr {
 }
 
 .jumbotron .button-hero:hover {
-	color:var(--yellow);
+	color:yellow;
     background-color: black;
     border:1px solid black;
     text-decoration: none;
@@ -174,3 +174,37 @@ hr {
     color: orange;
     font-weight: 700;
 }
+
+a.home-images {
+ 
+        position: relative;
+        text-align: center;
+        color: white;
+        margin: 2%;
+        overflow: hidden;
+        text-decoration: none;
+        border: 1px solid white;
+        /* box-shadow: var(--smal-box-shadow); */
+    }
+
+.home-images img {
+        width: 100%;
+        height: auto;
+    }
+    
+.centered {
+        width: 100%;
+        background-color: #000000c9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex; /* Use flexbox to center text vertically and horizontally */
+        justify-content: center; /* Center text horizontally */
+        align-items: center; /* Center text vertically */
+        color: orange; 
+        font-size: large ;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+    
