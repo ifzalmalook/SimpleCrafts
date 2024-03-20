@@ -47,9 +47,9 @@ footer {
 
 
 .card-img-top {
-    height: 400px;
+    /* height: 400px; */
     max-width: 100%; /* Ensure the image does not exceed the container width */
-    object-fit: contain; Maintain aspect ratio and fit the entire image within the container
+    /* object-fit: contain; Maintain aspect ratio and fit the entire image within the container */
 }
 
 /* Styling for card border */
