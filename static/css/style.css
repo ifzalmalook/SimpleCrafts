@@ -123,3 +123,54 @@ hr {
     color: black;
     position: relative;
 }
+
+/* Home Banner */
+
+.background {
+    background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+
+}
+
+.jumbotron-container {
+    background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
+    background-color: rgba(0, 0, 0, 0.36);
+    background-blend-mode: overlay;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.button-hero {
+	border-radius:6px;
+	border:1px solid orange;
+	display:inline-block;
+	cursor:pointer;
+	padding:16px 31px;
+	text-decoration:none;
+    color: black;
+    background-color: orange;
+}
+
+.jumbotron .button-hero:hover {
+	color:var(--yellow);
+    background-color: black;
+    border:1px solid black;
+    text-decoration: none;
+}
+
+.button-hero h3 {
+    color: orange;
+}
+
+#hero-text {
+    color: orange;
+    font-weight: 700;
+}

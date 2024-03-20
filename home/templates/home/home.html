@@ -1,1 +1,55 @@
 {% extends 'base.html' %}
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+
+<div class="jumbotron jumbotron-fluid jumbotron-container p-5">
+    <div class="text-center">
+        <h4 class="display-4" id="hero-text">Hello, {{request.user.username}}, welcome back to Simple Crafts</S></h4>
+        <a class="button-hero special-text m-3" href="{% url 'account_signup' %}">Sign up</a>
+    </div>
+</div>
+
+
+
+
+{% else %}
+
+<div class="jumbotron jumbotron-fluid jumbotron-container p-5">
+    <div class="text-center">
+        <h4 class="display-4" id="hero-text">Craft Your Creativity, One Project at a Time!</h4>
+        <a class="button-hero special-text m-3" href="{% url 'account_signup' %}">Sign up</a>
+    </div>
+</div>
+
+<section>
+   
+    
+    <div class="row project-container">
+        <h1 class="text-center">Below are some of our latest projects</h1>
+        <h2 class="text-center">Create an account today:</h2>
+        <div class="row">
+            <div class="col-sm-6 text-center">
+            <h4>View the full project and start creating today!</h4>
+            </div>
+            <div class="col-sm-6 text-center">
+                <h4 class="ms-1">Upload your own amazing projects!</h34>
+            </div>
+        </div>
+        {% for project in object_list %}
+            <div class="col-md-4">
+                <div class="mt-2 mb-2 ms-2 me-2">
+                    <a href="{% url 'full_project' project.slug %}">
+                        <img src="{{ project.image.url }}" alt="image of {{ project.title }}" style="width:100%">
+                    </a>   
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+{% endif %}
+
+{% endblock %}
