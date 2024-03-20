@@ -66,9 +66,9 @@ footer {
 .clickable {
     background-color:  rgba(0, 0, 0, 0.729);
     
-    border: 3px solid #E6CCFF;
+    border: 3px solid orange;
 
-    color: #E6CCFF;
+    color: orange;
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
@@ -175,6 +175,7 @@ hr {
     font-weight: 700;
 }
 
+/* Homepage project list */
 a.home-images {
  
         position: relative;
@@ -207,4 +208,9 @@ a.home-images {
         left: 50%;
         transform: translate(-50%, -50%); */
     }
-    
+
+    /* card titles on projects page */
+
+.card-info {
+    font-size: large;
+}

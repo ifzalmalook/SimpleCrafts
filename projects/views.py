@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import (CreateView, ListView, DeleteView, UpdateView)
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.db.models import Q
 from .models import Project
@@ -52,14 +53,7 @@ class AddProject(LoginRequiredMixin, CreateView):
         messages.success(self.request, "Your project has been added!")
         return super(AddProject, self).form_valid(form)
     
-    # def form_invalid(self, form):
-    #     # Form is not valid, render the form page with validation errors
-    #     messages.error(self.request, 'Please correct the errors below.')
-    #     return render(self.request, self.template_name, {'form': form})
-
-
-      
-
+@login_required
 def full_project(request, slug):
     """
     View full project details
