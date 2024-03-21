@@ -91,6 +91,34 @@
 
     </header>
 
+    <!-- Django messages -->
+
+    {% if messages %}
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                {% for message in messages %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+    <!-- {% if messages %}
+        <section id="alerts">
+            {% for msg in messages %}
+                <!-- all django message tags mirror bootstrap, except error/danger -->
+                <!-- <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+                    <h3>{{ msg }}</h3>
+                </aside>
+            {% endfor %}
+        </section> -->
+    <!-- {% endif %} --> 
+
     <main>
       {% block content %}
       
