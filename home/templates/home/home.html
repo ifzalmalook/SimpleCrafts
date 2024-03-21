@@ -3,23 +3,19 @@
 {% block content %}
 
 
-{% if request.user.is_authenticated %}
+
+
+
 
 <div class="jumbotron jumbotron-fluid jumbotron-container p-5">
     <div class="text-center">
+    {% if request.user.is_authenticated %}
         <h4 class="display-4" id="hero-text">Hello {{request.user.username}}, welcome back to Simple Crafts</S></h4>
-    </div>
-</div>
-
-
-
-
-{% else %}
-
-<div class="jumbotron jumbotron-fluid jumbotron-container p-5">
-    <div class="text-center">
+    {% else %} 
         <h4 class="display-4" id="hero-text">Craft Your Creativity, One Project at a Time!</h4>
+       
         <a class="button-hero special-text m-3" href="{% url 'account_signup' %}">Sign up</a>
+    {% endif %}
     </div>
 </div>
 
@@ -33,13 +29,25 @@
 
 
 <section>
-   
+    {% if request.user.is_authenticated %}
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h2>Do you have something new for us?</h2>
+                <a href="{% url 'add_project' %}" class="clickable">Add Project</a>
+            </div>
+        </div>
+    </div>
     
+
+
     <div class="row project-container">
+         <h1 class="text-center mt-1">Below are our most liked projects</h1>
+        {% else %}
         
-        <h1 class="text-center">Below are our most liked projects</h1>
-        <h2 class="text-center">Create an account today:</h2>
-        <div class="row">
+        <h2 class="text-center">Create an account today:</h2>   
+            <div class="row">
             <div class="col-sm-6 text-center">
             <h4>View the full project and start creating today!</h4>
             </div>
@@ -47,6 +55,7 @@
                 <h4 class="ms-1">Upload your own amazing projects!</h34>
             </div>
         </div>
+        {% endif %}
         {% for project in object_list %}
             <div class="col-md-4">
                 <div class="mt-2 mb-2 ms-2 me-2 text-center">
@@ -66,6 +75,6 @@
 </section>
 
 
-{% endif %}
+
 
 {% endblock %}
