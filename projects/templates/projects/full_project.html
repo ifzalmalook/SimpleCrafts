@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -64,7 +65,11 @@
     
     
             <div class="col-lg-6 mt-lg-2 col-auto full-image mt-2">
-                <img src="{{ project.image.url }}" class="img-fluid full-image" alt="{{ project.title }}">
+                {% if "placeholder" in project.image.url %} 
+                    <img class="img-fluid full-image" src="{% static 'images/placeholder.jpg' %}" alt="placeholder image" >
+                {% else %} 
+                    <img class="img-fluid full-image" src="{{ project.image.url }}"  alt="{{ project.title }}">
+                {% endif %}
             </div>
         </div>
     </div>
