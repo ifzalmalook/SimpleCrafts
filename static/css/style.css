@@ -6,6 +6,10 @@
     background-color: #E6CCFF;
 }
 
+.logo {
+    max-width: 100px;
+    height: auto;
+}
 /* Keep footer at bottom */
 
 html, body {
@@ -194,7 +198,7 @@ a.home-images {
     }
     
 .centered {
-        
+        width: 100%;
         background-color: #000000c9;
         position: absolute;
         top: 0;
