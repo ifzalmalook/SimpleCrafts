@@ -32,7 +32,28 @@
 
                 </div>
                 {% endif %}
+
+                <!-- Code for Likes function -->
+
+                <div class="text-center">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {% if has_liked %}
+                        
+                        <button type="submit" class="like"><i class="fa-solid fa-thumbs-up"></i></button>
+                         
+                        {% else %}
+        
+                        <button type="submit" class="like"><i class="fa-regular fa-thumbs-up"></i></button>
+        
+                        {% endif %}
+        
+                        </form>
+                        Likes: {{project.likes.count}}
+                    </div> 
                 <hr>
+
+
                 
                 
                 <div class = "row justify-content-center step-box ms-1">

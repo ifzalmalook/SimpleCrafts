@@ -22,6 +22,7 @@ class Project(models.Model):
     image = CloudinaryField ('image', default='placeholder')
     published_on = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE)
+    likes = models.ManyToManyField(User, default=None, blank=True, related_name='project_post')
 
     class Meta:
         ordering = ['-published_on']

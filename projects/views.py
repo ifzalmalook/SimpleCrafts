@@ -61,12 +61,35 @@ def full_project(request, slug):
     
     queryset = Project.objects.filter(slug=slug)
     project = get_object_or_404(queryset, slug=slug)
+    has_liked = False
+
+    if request.user.is_authenticated:
+        user=request.user
+
+        if project.likes.filter(id=user.id).exists():
+            has_liked = True
+
+    
+   
+    if request.method == 'POST':
+
+        if request.user.is_authenticated:
+            user=request.user
+
+        if project.likes.filter(id=user.id).exists():
+            project.likes.remove(user)
+            has_liked=False
+        
+        else:
+            project.likes.add(user)
+            has_liked=True
     
     # Pass the project object to the template context
     return render(
         request,
         "projects/full_project.html",
-        {"project": project}  # Use the correct variable name here
+        {"project": project,
+        "has_liked":has_liked}  # Use the correct variable name here
     )
 
 class DeleteProject(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
