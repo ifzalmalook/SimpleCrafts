@@ -10,10 +10,15 @@
     max-width: 70px;
     height: auto;
 }
+
+/* .nav-text {
+    font-size : x-large;
+} */
+
 /* Keep footer at bottom */
 
 html, body {
-    height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -151,6 +156,17 @@ hr {
     align-items: center;
     }
 
+.jumbotron-container-logged {
+        background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
+        background-color: rgba(0, 0, 0, 0.36);
+        background-blend-mode: overlay;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
 
 .button-hero {
 	border-radius:6px;
@@ -242,3 +258,27 @@ a.home-images {
     border: 1px solid black;
     
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 820px) and (max-width: 1030px) {
+    /* CSS rules for screens between 820px and 1024px */
+
+    .jumbotron-container-logged {
+        background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
+        background-color: rgba(0, 0, 0, 0.36);
+        background-blend-mode: overlay;
+        height: 900px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .logged-home {
+        margin-top: 200px;
+    }
+
+}
+

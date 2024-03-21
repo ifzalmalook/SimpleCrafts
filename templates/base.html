@@ -24,14 +24,60 @@
 
     <header>
 
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg nav-color nav-text">
+  <div class="container-fluid my-2">
+      <a class="navbar-brand" href="#"><img src="{% static 'images/logo.jpg' %}" alt="Simple Crafts Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'projects' %}">Crafts</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'add_project' %}">New</a>
+              </li>
+              <!-- Authentication -->
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page" href="{% url 'account_signup' %}">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+              </li>
+              {% endif %}
+          </ul> 
+          <!-- Search bar -->
+          <form class="d-flex" role="search" method="GET" action="{% url 'projects' %}">
+              <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </div>
+</nav> 
+ 
+
+
+
+
+
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg nav-color">
+         <!-- <nav class="navbar navbar-expand-lg nav-color">
             <div class="container-fluid my-2">
               <a class="navbar-brand" href="#"><img src="{% static 'images/logo.jpg' %}" alt="Simple Crafts Logo" class="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
@@ -43,7 +89,7 @@
                     <a class="nav-link" href="{% url 'add_project' %}">New</a>
                   </li>
                   <!-- Authentication -->
-                  {% if user.is_authenticated %}
+                   <!-- {% if user.is_authenticated %}
                       <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                           href="{% url 'account_logout' %}">Logout</a>
@@ -57,10 +103,10 @@
                         <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
                       </li>
                   {% endif %}
-                      
+                       -->
 
 
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
@@ -74,20 +120,20 @@
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                   </li>
-                </ul>
+                </ul>   -->
 
                 <!-- Search bar -->
-                <form class="d-flex" role="search" method="GET" action="{% url 'projects' %}">
+                <!-- <form class="d-flex" role="search" method="GET" action="{% url 'projects' %}">
                   <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
 
                 <!-- Search bar -->
-              </div>
+               <!-- </div>
             </div>
-          </nav>
+          </nav> -->
 
-    <!-- Navbar-->
+    <!-- Navbar -->
 
     </header>
 
