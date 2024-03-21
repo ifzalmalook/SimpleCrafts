@@ -25,6 +25,7 @@ class Projects(ListView):
     model = Project   
     paginate_by = 6
 
+   
     def get_queryset(self, **kwargs):
         search = self.request.GET.get("query")
         if search:
