@@ -24,16 +24,16 @@
                 </div>
                 
                 {% if request.user == project.author %}
-                <div class ="crud text-center">
-                <a href="{% url 'edit_project' project.slug %}">Edit</a>
-                <a href="{% url 'delete_project' project.slug %}">Delete</a>
+                <div class ="text-center">
+                <a href="{% url 'edit_project' project.slug %}"  class="edit btn btn-success">Edit</a>
+                <a href="{% url 'delete_project' project.slug %}" class="delete btn btn-danger">Delete</a>
 
                 </div>
                 {% endif %}
 
                 <!-- Code for Likes function -->
 
-                <div class="text-center">
+                <div class="text-center mt-1">
                     <form action="" method="POST">
                         {% csrf_token %}
                         {% if has_liked %}

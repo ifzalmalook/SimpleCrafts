@@ -232,3 +232,10 @@ a.home-images {
     font-weight: bold;
     font-size:larger;
 }
+
+/* CRUD buttons */
+
+.crud {
+    border: 1px solid black;
+    
+}
