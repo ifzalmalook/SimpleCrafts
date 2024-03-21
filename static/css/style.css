@@ -11,9 +11,8 @@
     height: auto;
 }
 
-/* .nav-text {
-    font-size : x-large;
-} */
+
+
 
 /* Keep footer at bottom */
 
@@ -282,3 +281,16 @@ a.home-images {
 
 }
 
+@media only screen and (min-width: 820px) {
+
+.nav-text {
+    font-size : x-large;
+}
+
+}
+
+@media only screen and (min-width: 2560px) {
+    html {
+        font-size: 24px; 
+    }
+}
