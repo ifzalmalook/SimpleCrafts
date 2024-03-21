@@ -7,7 +7,7 @@
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
 }
 /* Keep footer at bottom */
@@ -198,7 +198,7 @@ a.home-images {
     }
     
 .centered {
-        width: 100%;
+        width: 215%;
         background-color: #000000c9;
         position: absolute;
         top: 0;

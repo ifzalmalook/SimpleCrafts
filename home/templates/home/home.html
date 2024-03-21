@@ -51,7 +51,7 @@
             <div class="col-md-4">
                 <div class="mt-2 mb-2 ms-2 me-2 text-center">
                     <a href="{% url 'full_project' project.slug %}" class="home-images">
-                        <img src="{{ project.image.url }}" alt="image of {{ project.title }}" style="width:100%">
+                        <img src="{{ project.image.url }}" alt="image of {{ project.title }}">
                         <div class="centered ps-1 pt-1">{{project.title}}
                             <p class="likes-count mt-3 ms-2 pe-1"><i class="fa-regular fa-thumbs-up me-1"></i>{{project.likes.count}}</p>
                         </div>
