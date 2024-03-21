@@ -214,3 +214,17 @@ a.home-images {
 .card-info {
     font-size: large;
 }
+
+/* Likes button and counter */
+
+
+.like {
+    font-size: larger;
+    background-color: white;
+    border: none;
+}
+
+.likes-count {
+    font-weight: bold;
+    font-size:larger;
+}
