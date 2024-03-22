@@ -251,17 +251,42 @@ a.home-images {
     font-size:larger;
 }
 
-/* CRUD buttons */
+/* Buttons */
 
 .crud {
     border: 1px solid black;
     
 }
 
+.page-link{
+    background-color: #E6CCFF;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: hidden;
+}
+
+.account-container { 
+    margin-top: 10vh;
+
+    
+}
+
+.account-colour {
+    background-color: #e6ccff94;
+}
+
+/* Account Pages */
+
+
+
 /* Media Queries */
 
 @media only screen and (min-width: 820px) and (max-width: 1030px) {
-    /* CSS rules for screens between 820px and 1024px */
+   
 
     .jumbotron-container-logged {
         background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
@@ -281,11 +306,13 @@ a.home-images {
 
 }
 
+
 @media only screen and (min-width: 820px) {
 
 .nav-text {
     font-size : x-large;
 }
+
 
 }
 
@@ -294,3 +321,10 @@ a.home-images {
         font-size: 24px; 
     }
 }
+
+/* @media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 50px;
+    }
+} */
