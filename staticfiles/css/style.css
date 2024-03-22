@@ -11,6 +11,9 @@
     height: auto;
 }
 
+.nav-text {
+    font-size : x-large;
+}
 
 
 
@@ -241,7 +244,7 @@ a.home-images {
 
 
 .like {
-    font-size: larger;
+    font-size: x-large;
     background-color: white;
     border: none;
 }
@@ -249,6 +252,11 @@ a.home-images {
 .likes-count {
     font-weight: bold;
     font-size:larger;
+    text-decoration: none;
+}
+
+.like-colour {
+    color: black;
 }
 
 /* Buttons */
@@ -279,9 +287,11 @@ a.home-images {
     background-color: #e6ccff94;
 }
 
-/* Account Pages */
+/* Project info */
 
-
+.bold {
+    font-weight: bold;
+}
 
 /* Media Queries */
 
@@ -307,14 +317,11 @@ a.home-images {
 }
 
 
-@media only screen and (min-width: 820px) {
-
-.nav-text {
-    font-size : x-large;
-}
 
 
-}
+
+
+
 
 @media only screen and (min-width: 2560px) {
     html {

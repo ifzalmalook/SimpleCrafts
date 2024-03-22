@@ -124,6 +124,7 @@ class EditProject(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
             context['form'] = self.form_class(instance=self.get_object())
         return context
 
+
     def form_valid(self, form):
         messages.success(self.request, 'Your project has been updated!')
         return super().form_valid(form)

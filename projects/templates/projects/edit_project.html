@@ -9,7 +9,7 @@
         <h1 class="text-center mt-2">Edit Project</h1>
         {% csrf_token %}
         {{ form.media }}
-        {% crispy form %}
+        {{ form|crispy }}
 
         <!-- Manually display the current image -->
         {% if form.instance.image %}
