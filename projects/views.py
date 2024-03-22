@@ -12,6 +12,8 @@ from django.views import generic, View
 
 # Create your views here.
 
+
+
 def home(request):
     return render(request, 'home.html')
 
@@ -113,10 +115,15 @@ class EditProject(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     success_url = reverse_lazy('projects')
 
     def test_func(self):
-        return self.request.user == self.get_object().author
+        obj = self.get_object()
+        return self.request.user == obj.author
 
-    #add success message
+    def get_context_data(self, **kwargs):
+        context = super(EditProject, self).get_context_data(**kwargs)
+        if 'form' not in context:
+            context['form'] = self.form_class(instance=self.get_object())
+        return context
+
     def form_valid(self, form):
-        # If the form is valid, display a success message
         messages.success(self.request, 'Your project has been updated!')
         return super().form_valid(form)
