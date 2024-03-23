@@ -122,13 +122,29 @@ Users who are logged in can access the full details and instructions of individu
 
 
 # Wireframes
+
 Desktop Homepage
-<img src="assets/readme-images/homewiredesk.jpg" alt="homepage" width="500" height="300">
+<img src="assets/readme-images/homewiredesk.jpg" alt="Desktop homepage view" width="500" height="300">
+
+Mobile and Tablet Homepage
+
+<img src="assets/readme-images/homewiretabmob.jpg" alt="Mobile and tablet view of homepage" width="500" height="300">
+
+Desktop Project List Page
+
+<img src="assets/readme-images/projlistdesk.jpg" alt="Desktop view of project list page" width="500" height="300">
+
+Mobile and Tablet Project List Page
+<img src="assets/readme-images/listtabmob.jpg" alt="Mobile and tablet view of project list page" width="500" height="300">
+
+Desktop Full Project Page
+<img src="assets/readme-images/projdetaildesk.jpg" alt="Desktop view of full project page" width="500" height="300">
 
 
-![List View](static/images/listwire.png)
+Mobile and Tablet Full Project Page
+<img src="" alt="assets/readme-images/detailtabmob.jpg" width="500" height="300">
 
-![Detail View](static/images/detailwire.png)
+
 
 
 
