@@ -123,7 +123,7 @@ Users who are logged in can access the full details and instructions of individu
 
 # Wireframes
 Desktop Homepage
-<img src="assets/readme-images/homewiredesk.jpg" alt="homepage" width="400" height="200">
+<img src="assets/readme-images/homewiredesk.jpg" alt="homepage" width="500" height="300">
 
 
 ![List View](static/images/listwire.png)
