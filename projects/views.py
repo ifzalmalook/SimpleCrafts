@@ -100,7 +100,7 @@ class DeleteProject(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     success_url = reverse_lazy('projects')
 
     def test_func(self):
-        return self.request.user == self.get_object().author
+        return self.request.user == self.get_object().author or self.request.user.is_superuser
 
     #add success message
     def form_valid(self, form):

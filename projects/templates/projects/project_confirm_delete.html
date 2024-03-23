@@ -9,8 +9,8 @@
         <div class="col text-center">
             <form method = "post">
                 {% csrf_token %}
-                <p> You are about to delete "{{object.title}}"</p>
-                <input type="submit" value = "Confirm" class="btn btn-primary">
+                <h2> You are about to delete "{{object.title}}"</h2>
+                <input type="submit" value = "Confirm" class="btn btn-danger">
             </form>
         </div>
     </div>

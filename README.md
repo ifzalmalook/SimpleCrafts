@@ -219,29 +219,85 @@ When a user is logged in, the Navbar shows logout instead of login/register
 
 The Homepage has a large background image of craft materials in a Jumbotron with the website logo and a sign up button as call to action for unregistered users.
 
-It also features the
-![Landing Page]()
+It also features 3 of the most liked projects to give potential site members a preview of what to expect fron the website. The featured projects are in the form of images with an overlay of the title of the project and the number of likes it has recieved
+
+If a user clicks on the image they are redirected to the sign in page which includes a link to register if they dont have an account
 
 
-- __The Footer__ 
+![Homepage](assets/readme-images/homepage.jpg)
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
 
-![Footer]()
+For logged in users the homepage features different content, the slogan is changed to a welcome message and they are prompted to add new projects.
 
-- __Gallery__
+![Homepage logged in](assets/readme-images/loggedhome.jpg)
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
 
-![Gallery]()
 
-- __The Sign Up Page__
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+**The Footer**
 
-![Sign Up]()
+The footer featurss on all pages and includes links to the relevant social media sites for Simply Crafts and also a link to my github. The links will open to a new tab to allow easy navigation for the user. It is responsive across different devices.
+
+![Footer](assets/readme-images/footer.jpg)
+
+**Crafts page**
+
+This page features the craft projects that have already been added to the website. They are arranged on cards, which have a feature image, number of likes, author, publish date and a large call to action button that features the title. Non registered users are able to browse this section in order to pique their interest and entice them to register. If they click on the titles then they will be redirected to the login page.
+
+![Crafts Page](assets/readme-images/craftpage.jpg)
+
+**Full Project Page**
+
+When users click on the black title button on the Crafts page, they will be taken to the full project page if logged in.
+
+Here they can see the full information for the project, including an image, description, materials and step by step instructions. They can also like or unlike the project this page.
+
+If it is a project they have uploaded then they can also edit or delete the project. 
+
+![Full Project Page](assets/readme-images/fullproject.jpg)
+
+
+**Like button**
+
+On the full project page, logged in users can like or unlike a project, they will know they have liked it as the counter underneath will increase and the icon will go from white to solid
+
+**Like button when unliked**
+
+![Like button and Counter unliked](assets/readme-images/unliked.jpg)
+
+**Like button after liking a project**
+
+![Like button and counter after liking project](assets/readme-images/liked.jpg)
+
+**Edit and Delete buttons**
+
+These buttons are only visible to the user who has uploaded this particular project
+
+![Edit and Delete Buttons](assets/readme-images/edanddelete.jpg)
+
+If users click delete they are first taken to a screen that allows them to confirm they wish to delete the project before that action is completed, this can help avoid accidental deletions.
+
+![Confirm Delete](assets/readme-images/confirmdelete.jpg)
+
+**The Sign in Page**
+
+Registered users can sign in here, this is also a page where non logged in users will be redirected to if they try and access a page that requires authentication.
+
+There is also a link for users to reach the registration page if they dont have an account
+
+![Sign In](assets/readme-images/signin.jpg)
+
+**Registration Page**
+
+New users can register here, and there is a link for already registered users to access the login page from here.
+
+![Register](assets/readme-images/register.jpg)
+
+**Add Project Page**
+
+This page is only accessible by logged in users and here they can fill in a form to have their project added to the site
+
+
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
