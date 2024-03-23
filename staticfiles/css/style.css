@@ -160,7 +160,7 @@ hr {
 
 .jumbotron-container-logged {
         background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
-        background-color: rgba(0, 0, 0, 0.36);
+        background-color: rgba(0, 0, 0, 0.408);
         background-blend-mode: overlay;
         height: 500px;
         background-size: cover;
@@ -171,12 +171,14 @@ hr {
         }
 
 .button-hero {
-	border-radius:6px;
-	border:1px solid orange;
+	border-radius:10px;
+	border:1px solid black;
 	display:inline-block;
 	cursor:pointer;
-	padding:16px 31px;
+	padding:16px 20px;
 	text-decoration:none;
+    font-size: large;
+    font-weight: bold;
     color: black;
     background-color: orange;
 }
@@ -195,6 +197,8 @@ hr {
 #hero-text {
     color: orange;
     font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding : 10px;
 }
 
 /* Homepage project list */
