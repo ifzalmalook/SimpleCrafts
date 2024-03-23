@@ -7,9 +7,14 @@ The site will feature all the information needed to craft the featured projects,
 
 ![Home page responsive](assets/readme-images/responsivemain.jpg)
 
-## Features 
+# UX
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The website is mainly geared towards adults who would like to carry out some diy craft projects, however a 'kids' category is also included in the modedls so that parents can also carry out fun activities with their children.
+
+The aim of the website is to allow easy and intuitive navigation for a streamlined experience.
+All users can access the bank of projects that have been uploaded and the most liked are featured on the homepage to entice those that are not registered to sign up.
+
+Users who are logged in can access the full details and instructions of individual projects and also like and unlike them. They can also upload their own projects to share with the community and edit and delete their entries. This allows users to store their craft ideas and access them at any time. 
 
 **User Stories**
 
@@ -45,22 +50,22 @@ In this section, you should go over the different parts of your project, and des
 
 - Acceptance criteria 2: user can add posts to the website as craft projects
 
-6. As a **logged in user** I can **upload images to my posts** so that **the final result of craft project is visible**
+6. As a **logged in user** I can **upload images to my projects** so that **the final result of craft project is visible**
 
 - Acceptance criteria 1: image upload available through front end form
 
 
-7. As a **logged in user** I can **edit my posts** so that **I can make changes/rectify any mistakes**
+7. As a **logged in user** I can **edit the projects that I have added** so that **I can make changes/rectify any mistakes**
 
-- Acceptance criteria 1: logged in user can access their posts
+- Acceptance criteria 1: logged in user can access their projects
 
-- Acceptance criteria 2: logged in user can edit their posts
+- Acceptance criteria 2: logged in user can edit their projects
 
-8. As a **logged in user** I can **delete my posts** so that **I can control the content I upload**
+8. As a **logged in user** I can **delete my added projects** so that **I can control the content I upload**
 
-- Acceptance criteria 1: logged in user can access their own posts
+- Acceptance criteria 1: logged in user can access their own projects
 
-- Acceptance criteria 2: logged in user can delete their own posts
+- Acceptance criteria 2: logged in user can delete their own projects
 
 9. As a **site user** I can **easily navigate the website** so that **I can find the correct page/content easily**
 
@@ -85,7 +90,7 @@ In this section, you should go over the different parts of your project, and des
 - Acceptance criteria 2: variety of searchable parameters
 
 
-12. As a **logged in user** I can **favourite a post** so that **I can easily reference craft projects that I found whilst browsing**
+12. As a **logged in user** I can **favourite a project** so that **I can easily reference craft projects that I found whilst browsing**
 
 - Acceptance criteria 1: create an add to favourites button
 
@@ -93,9 +98,33 @@ In this section, you should go over the different parts of your project, and des
 
 - Acceptance criteria 3: be able to unlick add to favourites button
 
-# Wireframes
+13. As a **logged in user** I can **like and unlike projectss** so that **I can show my appreciation for projects**
 
-![Homepage](static/images/homepagewire.png)
+- Acceptance criteria 1 : Logged in User can access 'like' button
+
+- Acceptance criteria 2: User can click like button to like and unlike projects
+
+- Acceptance criteria 3: Like button colour is updated for feedback
+
+14. As a registered user I can **log in and log out of my account** so that **I can easily connect to or disconnect from the website**
+
+- Acceptance criteria 1 : User can register an account
+
+- Acceptance criteria 2 : User can log in
+
+- Acceptance criteria 3: User can log out
+
+15. As a **User** I can **see how many time**s a post has been liked** so that **I can tell which projects are popular**
+
+- Acceptance criteria 1: There is a like counter
+
+- Acceptance criteria 2 : Users are able to see the number of likes displayed with projects
+
+
+# Wireframes
+Desktop Homepage
+<img src="assets/readme-images/homewiredesk.jpg" alt="homepage" width="400" height="200">
+
 
 ![List View](static/images/listwire.png)
 
