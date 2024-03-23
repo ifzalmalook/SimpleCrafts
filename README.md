@@ -5,7 +5,7 @@ These will be regularly updated by members of the site, who can share their expe
 
 The site will feature all the information needed to craft the featured projects, and it will be provided in a simple and easy to digest manner. The site aims to eventually build a community for those who love arts and crafts. 
 
-![assets/readme-images/responsivemain.jpg]
+![Home page responsive](assets/readme-images/responsivemain.jpg)
 
 ## Features 
 
