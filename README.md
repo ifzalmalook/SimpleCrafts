@@ -121,7 +121,11 @@ Users who are logged in can access the full details and instructions of individu
 - Acceptance criteria 2 : Users are able to see the number of likes displayed with projects
 
 
-# Wireframes
+# Design
+
+## Wireframes
+
+Balsamiq was used to create wireframes for the initial design, they are available below:
 
 Desktop Homepage
 
@@ -148,19 +152,45 @@ Mobile and Tablet Full Project Page
 
 <img src="assets/readme-images/detailtabmob.jpg" alt=" Mobile and tablet wireframe of full project" width="500" height="300">
 
+## Colour Scheme
+
+
+![colour pallette](assets/readme-images/colours.jpg)
+
+I use WebAIM contrast checker (https://webaim.org/) to ensure the colour scheme was suitable.
+
+## Typography
+
+The Cambay font was selected and used in a range of weights, as it has an elegant modern aesthetic whilst still maintaining good readability. 
+
+
+# Agile
+
+The Agile methodology was used for planning and creation of this website. I set up a project kanban board using Github projects. The MoSCoW method was used to help prioritise features with a view to achieve MVP initially and then build further if possible. 
+
+![Kanban Board](assets/readme-images/kanban.jpg)
 
 
 
+# Database Design
 
-# Database ERD
+I used Lucidchart to create an Entity Relationship Diagram to help me plan the fields for my database models and understand how the models would link together
 
-![ERD](static/images/ERD.png)
-
-
-
+![ERD](assets/readme-images/erd.png)
 
 
+### Data Models
 
+I used the built in Django user model and created custom Project and Category models.
+
+![Models](assets/readme-images/models.jpg)
+
+
+### Flow Chart
+
+I used Lucidchart to create a logic flowchart to help me visualise how to control access to different pages with user authentication and also to help me priotise features.
+
+![Flow chart](assets/readme-images/flowchart.png)
 
 
 ### Existing Features
