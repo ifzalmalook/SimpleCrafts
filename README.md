@@ -157,7 +157,7 @@ Mobile and Tablet Full Project Page
 
 ![colour pallette](assets/readme-images/colours.jpg)
 
-I use WebAIM contrast checker (https://webaim.org/) to ensure the colour scheme was suitable.
+I used WebAIM contrast checker (https://webaim.org/) to ensure the colour scheme was suitable.
 
 ## Typography
 
@@ -195,18 +195,31 @@ I used Lucidchart to create a logic flowchart to help me visualise how to contro
 
 ### Existing Features
 
-- __Navigation Bar__
+**Navigation Bar**
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+The navbar features on all pages for consistency and includes links to the Logo, Home page, Craft list page and Add Craft page. The Account pages differ depending on if the user is logged in or not. On smaller devices such as tablets and mobiles, it becomes a dropdown menu utilising the burger icon for better responsivity.
 
-![Nav Bar]()
+Desktop Navbar   
 
-- __The landing page image__
+![Navbar Desktop](assets/readme-images/navbardesk.jpg)
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+Toggle Navbar
 
+![Navbar Toggle](assets/readme-images/navtoggle.jpg)
+
+Logged In User Navbar
+
+When a user is logged in, the Navbar shows logout instead of login/register
+
+![Navbar Logged In](assets/readme-images/loggednav.jpg)
+
+
+
+**Homepage**
+
+The Homepage has a large background image of craft materials in a Jumbotron with the website logo and a sign up button as call to action for unregistered users.
+
+It also features the
 ![Landing Page]()
 
 
