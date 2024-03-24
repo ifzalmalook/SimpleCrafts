@@ -218,8 +218,14 @@ a.home-images {
         width: 100%;
         height: auto;
     }
+
+.home-images-text {
+    font-size: x-large;
+    text-decoration: none;
     
-.centered {
+}
+    
+/* .centered {
         width: 215%;
         background-color: #000000c9;
         position: absolute;
@@ -232,7 +238,7 @@ a.home-images {
         color: orange;  
         font-size: large ; 
         
-    }
+    } */
     
 .add {
     display: block;
