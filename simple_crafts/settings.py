@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ifzalmalook-simplecraft-itue9ytg8nf.ws-eu110.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ifzalmalook-simplecraft-itue9ytg8nf.ws-eu110.gitpod.io', 
+                 '.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com']
 
 
@@ -49,7 +50,6 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     
-
     #other
     'crispy_forms',
     'crispy_bootstrap5',
@@ -147,21 +147,18 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', # noqa
     },
 ]
-
-
-
 
 
 # Internationalization
@@ -186,7 +183,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,
-'static'), ]
+                    'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 

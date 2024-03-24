@@ -11,10 +11,8 @@ class Home(ListView):
     template_name = 'home/home.html'
     model = Project
 
-    #  Display most liked projects on home page    
+    # Display most liked projects on home page
     def get_queryset(self):
-         return Project.objects.annotate(num_likes=Count('likes')).order_by('-num_likes')[:3]
-
-    def get_queryset(self):
-        return self.model.objects.all()[:3]
-
+        return (Project.objects
+                .annotate(num_likes=Count('likes'))
+                .order_by('-num_likes')[:3])

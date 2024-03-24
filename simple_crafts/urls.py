@@ -1,8 +1,3 @@
-
-
-
-
-
 """
 URL configuration for simple_crafts project.
 
