@@ -8,6 +8,7 @@ from .models import Project
 from .forms import ProjectForm
 from django.urls import path, reverse_lazy
 from django.utils.text import slugify
+import uuid
 from datetime import datetime
 from django.views import generic, View
 
@@ -54,15 +55,12 @@ class AddProject(LoginRequiredMixin, CreateView):
         # Set the author of the project
         form.instance.author = self.request.user
         
-        # Set the published_on date/time (assuming it's a field in your form)
-        form.instance.published_on = datetime.now()
+        # Generate a UUID and assign it as the slug
+        form.instance.slug = str(uuid.uuid4())
 
-        # Generate the slug using published_on and title
-        title = form.cleaned_data.get('title')
-        published_on = form.instance.published_on
-        slug = slugify(f"{published_on.strftime('%Y-%m-%d')}-{title}")
-        form.instance.slug = slug
+        # Display success message
         messages.success(self.request, "Your project has been added!")
+
         return super().form_valid(form)
 
         
