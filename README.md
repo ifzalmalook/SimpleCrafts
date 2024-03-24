@@ -98,7 +98,7 @@ Users who are logged in can access the full details and instructions of individu
 
 - Acceptance criteria 3: be able to unlick add to favourites button
 
-13. As a **logged in user** I can **like and unlike projectss** so that **I can show my appreciation for projects**
+13. As a **logged in user** I can **like and unlike projects** so that **I can show my appreciation for projects**
 
 - Acceptance criteria 1 : Logged in User can access 'like' button
 
@@ -114,7 +114,7 @@ Users who are logged in can access the full details and instructions of individu
 
 - Acceptance criteria 3: User can log out
 
-15. As a **User** I can **see how many time**s a post has been liked** so that **I can tell which projects are popular**
+15. As a **User** I can **see how many times a post has been liked** so that **I can tell which projects are popular**
 
 - Acceptance criteria 1: There is a like counter
 
