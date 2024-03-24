@@ -9,7 +9,7 @@
 
 <div class="container">
     <form method = "POST" enctype = "multipart/form-data" class="add-form">
-        <h1 class= "text-center"> Add Project</h1>
+        <h1 class= "text-center mt-2"> Add Project</h1>
         {% csrf_token %}
         {{form.errors}}
         {{form.media}}

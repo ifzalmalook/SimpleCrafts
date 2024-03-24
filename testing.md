@@ -75,3 +75,20 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 | Footer links |  Relevant website opened in new page | passed |
 | Authentication |  If non logged in users try to access a page where authentication is necessary they are redirected to sign in | passed |
 | Like counter |  Number increases with more likes | passed |
+
+
+# Responsivity Testing
+
+Responsivity was tested using Chrome devtools to ensure all pages of the website scaled well across all device sizes. Some gifs are included below where screen was recorded whilst widening and narrowing the devtools windows
+
+Please note that the files have been compressed but there may still be slow loading 
+
+![Responsivity home](assets/gifs/responsivehome.gif)
+
+![Responsivity crafts page](assets/gifs/responsivecrafts-ezgif.com-optimize.gif)
+
+![Responsivity full project page](assets/gifs/responsivefullproject-ezgif.com-optimize.gif)
+
+![Responsivity forms 1](assets/gifs/responsiveforms-ezgif.com-optimize.gif)
+
+![Responsivity forms 2](assets/gifs/responsiveregister-ezgif.com-optimize.gif)
