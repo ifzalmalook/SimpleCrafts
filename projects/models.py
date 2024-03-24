@@ -14,7 +14,7 @@ class Category(models.Model):
 
 class Project(models.Model):
     author = models.ForeignKey(User, related_name='project_author', on_delete=models.CASCADE)
-    title = models.CharField (max_length=255, unique=True, blank=False, null=False)
+    title = models.CharField (max_length=255, blank=False, null=False)
     slug = models.SlugField (max_length=255, unique=True, null=False)
     description = models.CharField (max_length=600, blank=False, null=False)
     materials = RichTextField(max_length=10000, blank=False, null=False)
