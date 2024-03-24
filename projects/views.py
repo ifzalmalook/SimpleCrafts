@@ -8,6 +8,7 @@ from .models import Project
 from .forms import ProjectForm
 from django.urls import path, reverse_lazy
 from django.utils.text import slugify
+from datetime import datetime
 from django.views import generic, View
 
 # Create your views here.
@@ -50,11 +51,22 @@ class AddProject(LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('projects')
 
     def form_valid(self, form):
+        # Set the author of the project
         form.instance.author = self.request.user
+        
+        # Set the published_on date/time (assuming it's a field in your form)
+        form.instance.published_on = datetime.now()
 
-        form.instance.slug = slugify(form.instance.title)
+        # Generate the slug using published_on and title
+        title = form.cleaned_data.get('title')
+        published_on = form.instance.published_on
+        slug = slugify(f"{published_on.strftime('%Y-%m-%d')}-{title}")
+        form.instance.slug = slug
         messages.success(self.request, "Your project has been added!")
-        return super(AddProject, self).form_valid(form)
+        return super().form_valid(form)
+
+        
+        
     
 @login_required
 def full_project(request, slug):

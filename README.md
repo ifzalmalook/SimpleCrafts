@@ -271,7 +271,7 @@ On the full project page, logged in users can like or unlike a project, they wil
 
 **Edit and Delete buttons**
 
-These buttons are only visible to the user who has uploaded this particular project
+These buttons are only visible to the user who has uploaded this particular project and to any admin user as they will have superuser priveleges
 
 ![Edit and Delete Buttons](assets/readme-images/edanddelete.jpg)
 
