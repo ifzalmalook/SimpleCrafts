@@ -57,11 +57,11 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 | **logged in user** I can **edit the projects that I have added** so that **I can make changes/rectify any mistakes**      | If user has added the project, they can access edit project button which opens edit form | passed but issue with current image not being populated in form automatically|
 |As a **logged in user** I can **delete my added projects** so that **I can control the content I upload**      | If the logged in user has added the project they can access delete button and use it to remove the project | passed |
 | As a **site user** I can **easily navigate the website** so that **I can find the correct page/content easily**       | Users can use all navigation links they are authenticated for and navbar links work properly | passed |
-| As a **user** I can **experience a responsive design** so that **I can use the website across a range of different sized devices**        | All pages are responsive across devices, checked in Chrome devtools | passed |
+| As a **user** I can **experience a responsive design** so that **I can use the website across a range of different sized devices**        | All pages are responsive across devices, checked in Chrome devtools and manually on a mobile | passed |
 | As a **user** I can **search using keywords** so that **I can find specific crafts posts easily**       | Searchbar returns results| passed |
 | As a **logged in user** I can **favourite a project** so that **I can easily reference craft projects that I found whilst browsing**|There will be a favourite button to use and add projects to users favourites |Failed - this idea was abandoned in favour of a "likes" functionality |
 | As a **logged in user** I can **like and unlike projects** so that **I can show my appreciation for projects**        | Logged in users can access "likes" button and can be clicked to like and unlike a project | passed |
-| As a registered user I can **log in and log out of my account** so that **I can easily connect to or disconnect from the website**      | When users use the login form, they are logged in to the website and when they click logout from navbar they are taken to logout page which logs them out form their account | passed |
+| As a registered user I can **log in and log out of my account** so that **I can easily connect to or disconnect from the website**      | When users use the login form, they are logged in to the website and when they click logout from navbar they are taken to logout page which logs them out from their account | passed |
 | As a **User** I can **see how many times a post has been liked** so that **I can tell which projects are popular**       | Likes counter will display number of likes and will be updated when like button is clicked| passed |
 
 ## Other Manual Testing
@@ -74,16 +74,21 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 | Navbar Links |  All lead to relevant pages when clicked | passed |
 | Footer links |  Relevant website opened in new page | passed |
 | Authentication |  If non logged in users try to access a page where authentication is necessary they are redirected to sign in | passed |
+| Like button |  Can be clicked to register a like and then clicked again to unlike | passed |
 | Like counter |  Number increases with more likes | passed |
+| Forms |  All forms can be submitted if valid information entered | passed |
+
+
+
 
 
 # Responsivity Testing
 
-Responsivity was tested using Chrome devtools to ensure all pages of the website scaled well across all device sizes. Some gifs are included below where screen was recorded whilst widening and narrowing the devtools windows
+Responsivity was tested using Chrome devtools to ensure all pages of the website scaled well across all emulated device sizes, including Iphone SE, XR, 12 Pro, 14 Pro Max, Google Pixel 7, Samsung Galaxy S20 Ultra and S8+, Samsung Galaxy A51/A71 Fold, ipad Mini, Air, Pro, Surface Pro 7, Surface Duo,Asus Zenbook Fold, Nest Hub, Nest Hub Max. Some gifs are included below where screen was recorded whilst widening and narrowing the devtools windows
 
 Please note that the files have been compressed but there may still be slow loading 
 
-![Responsivity home](assets/gifs/responsivehome.gif)
+![Responsivity home](assets/gifs/responsiverhome-ezgif.com-optimize.gif)
 
 ![Responsivity crafts page](assets/gifs/responsivecrafts-ezgif.com-optimize.gif)
 
@@ -92,3 +97,9 @@ Please note that the files have been compressed but there may still be slow load
 ![Responsivity forms 1](assets/gifs/responsiveforms-ezgif.com-optimize.gif)
 
 ![Responsivity forms 2](assets/gifs/responsiveregister-ezgif.com-optimize.gif)
+
+I checked desktop versions of Chrome, Microsoft Edge and Mozilla firefox manually, and also Chrome and Huawei native broswer on a Huawei P30 Pro mobile phone, all pages looked fine and buttons and links worked as they should. I did not have access to any Apple devices to check Safari.
+
+Initially there was an issue with how text was being rendered over the homepage images on firefox so the styling was changed and now the homepage renders properly on all browsers
+
+![Browser table](assets/test-images/browser-table.jpg)
