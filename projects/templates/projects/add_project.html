@@ -8,8 +8,8 @@
 
 
 <div class="container">
-    <form action="" method = "POST" enctype = "multipart/form-data" class="add-form">
-        <h1 class= "text-center"></h1>
+    <form method = "POST" enctype = "multipart/form-data" class="add-form">
+        <h1 class= "text-center"> Add Project</h1>
         {% csrf_token %}
         {{form.errors}}
         {{form.media}}

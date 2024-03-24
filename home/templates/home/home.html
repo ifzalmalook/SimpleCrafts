@@ -7,14 +7,14 @@
 
 <div class="jumbotron jumbotron-fluid jumbotron-container-logged p-5">
     <div class="text-center">
-        <h4 class="display-4" id="hero-text">Hello {{request.user.username}}, welcome back to Simple Crafts</S></h4>
+        <h4 class="display-4" id="hero-text">Hello {{request.user.username}}, welcome back to Simple Crafts</h4>
     </div>
 </div>
 
 <div class="container-fluid mt-5 mb-5 logged-home">
     <div class="row justify-content-center">
         <div class="col text-center">
-            <h2 class ="mt-1">Do you have something new for us?</h2>
+            <h2 class="mt-1">Do you have something new for us?</h2>
             <a href="{% url 'add_project' %}" class="clickable">Add Project</a>
         </div>
     </div>
@@ -30,72 +30,58 @@
     </div>
 </div>
 
-<div class="container flex-column pt-3 ">
-    <section class="text-center">
-        <p class="pt-4">
-            Welcome to Simple Crafts, your ultimate destination for all things crafting! Dive into a world of endless creativity where imagination knows no bounds. Whether you're a seasoned artisan or just starting your crafting journey, our platform offers a treasure trove of inspiration, tutorials, and support to fuel your passion. From DIY projects to expert tips, discover the joy of crafting and let your creativity flourish with us. Join our vibrant community today and unlock the endless possibilities of handmade beauty!
-        </p>
-    </section>
-
-
-
-<section>
-   
+<div class="container flex-column pt-3">
     
-    <div class="row project-container">
-        
-        <h1 class="text-center">Our most popular projects are featured below!</h1>
-        <h2 class="text-center">Create an account today:</h2>
-        <div class="row">
-            <div class="col-sm-6 text-center">
-            <h4>View the full project and start creating today!</h4>
-            </div>
-            <div class="col-sm-6 text-center">
-                <h4 class="ms-1">Upload your own amazing projects!</h34>
-            </div>
+
+        <div class="text-center">
+            <p class="pt-4">
+                Welcome to Simple Crafts, your ultimate destination for all things crafting! Dive into a world of
+                endless creativity where imagination knows no bounds. Whether you're a seasoned artisan or just starting
+                your crafting journey, our platform offers a treasure trove of inspiration, tutorials, and support to
+                fuel your passion. From DIY projects to expert tips, discover the joy of crafting and let your
+                creativity flourish with us. Join our vibrant community today and unlock the endless possibilities of
+                handmade beauty!
+            </p>
         </div>
-        {% for project in object_list %}
+  
+
+
+
+  
+
+
+        <div class="row project-container">
+
+            <h1 class="text-center">Our most popular projects are featured below!</h1>
+            <h2 class="text-center">Create an account today:</h2>
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h4>View the full project and start creating today!</h4>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h4 class="ms-1">Upload your own amazing projects!</h4>
+                </div>
+            </div>
+            {% for project in object_list %}
             <div class="col-md-4">
                 <div class="mt-2 mb-2 ms-2 me-2 text-center">
                     <a href="{% url 'full_project' project.slug %}" class="home-images">
                         <img src="{{ project.image.url }}" alt="image of {{ project.title }}" style="width:100%">
                         <div class="centered ps-1 pt-1">{{project.title}}
-                            <p class="likes-count mt-3 ms-2 pe-1"><i class="fa-regular fa-thumbs-up me-1"></i>{{project.likes.count}}</p>
+                            <p class="likes-count mt-3 ms-2 pe-1"><i
+                                    class="fa-regular fa-thumbs-up me-1"></i>{{project.likes.count}}</p>
                         </div>
-                        
-                    </a>   
-                    
+
+                    </a>
+
                 </div>
-                
+
             </div>
-        {% endfor %}
-    </div>
-</section>
+            {% endfor %}
+        </div>
 
 
+</div>
 {% endif %}
 
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

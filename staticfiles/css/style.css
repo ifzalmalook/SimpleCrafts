@@ -111,7 +111,7 @@ footer {
 }
 
 .pagination {
-    background-color: none;
+    background-color: transparent;
 }
 
 hr {
@@ -278,7 +278,7 @@ a.home-images {
 }
 
 .input-group {
-    display: hidden;
+    display: none;
 }
 
 .account-container { 
@@ -295,6 +295,12 @@ a.home-images {
 
 .bold {
     font-weight: bold;
+}
+
+/* Edit form current image */
+
+.current-image {
+    width: 100px;
 }
 
 /* Media Queries */

@@ -13,46 +13,44 @@
         <!-- Project Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-            {% if object_list %}   <!-- If statement related to no search results found -->
-                {% for project in object_list %} 
+                {% if object_list %} <!-- If statement related to no search results found -->
+                {% for project in object_list %}
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container card-info text-center">
-                                
-                                    
-                               
-    
-                                
 
-                                {% if "placeholder" in project.image.url %}      
-                                    <img class="card-img-top" src="{% static 'images/placeholder.jpg' %}" alt="placeholder image">
-                                {% else %}   
-                                    <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
+                                {% if "placeholder" in project.image.url %}
+                                <img class="card-img-top" src="{% static 'images/placeholder.jpg' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
                                 {% endif %}
-            
+
                                 <p class="author mt-2 bold">Author: {{ project.author }}</p>
                                 <p class="bold">Category: {{project.category}}</p>
                                 <p class="card-text text-muted h6">Published: {{ project.published_on }}</p>
-                                
-                                <p class="likes-count"><a href="{% url 'full_project' project.slug %}" class = "likes-count like-colour"> <i class="fa-regular fa-thumbs-up me-1"></i>{{project.likes.count}}</p>
+
+                                <p class="likes-count"><a href="{% url 'full_project' project.slug %}"
+                                        class="likes-count like-colour"> <i
+                                            class="fa-regular fa-thumbs-up me-1"></i>{{project.likes.count}}</a></p>
                             </div>
-                            <div class = "text-center" >
-                                <a href="{% url 'full_project' project.slug %}" class="post-link"> 
+                            <div class="text-center">
+                                <a href="{% url 'full_project' project.slug %}" class="post-link">
                                     <h3 class="card-title clickable mt-2">{{ project.title }}</h3>
                                 </a>
                             </div>
-                            <hr />
+                            <hr>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
-            {% else %}
+                {% else %}
                 <div class="col text-center">
                     <h2 class="text-center">No projects found.</h2>
                     <a href="{% url 'projects' %}" class="btn btn-primary text-center">Back</a>
                 </div>
-            {% endif %}
+                {% endif %}
             </div>
         </div>
     </div>
@@ -60,16 +58,16 @@
 
 <!-- Add pagination -->
 {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link me-1">&laquo; PREV </a></li>
-            {% endif %}
-            {% if page_obj.has_next %}
-                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link ms-1"> NEXT &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link me-1">&laquo; PREV </a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link ms-1"> NEXT &raquo;</a></li>
+        {% endif %}
+    </ul>
+</nav>
 {% endif %}
 
 {% endblock %}

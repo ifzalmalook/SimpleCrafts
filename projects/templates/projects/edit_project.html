@@ -5,7 +5,7 @@
 {%block content%}
 
 <div class="container">
-    <form action="" method="POST" enctype="multipart/form-data" class="add-form">
+    <form method="POST" enctype="multipart/form-data" class="add-form">
         <h1 class="text-center mt-2">Edit Project</h1>
         {% csrf_token %}
         {{ form.media }}
@@ -13,9 +13,9 @@
 
         <!-- Manually display the current image -->
         {% if form.instance.image %}
-        <div class="current-image">
+        <div>
             <label>Currently:</label>
-            <img src="{{ form.instance.image.url }}" alt="Current Image" width="100px" />
+            <img src="{{ form.instance.image.url }}" class="current-image" alt="Current Image">
         </div>
         {% endif %}
 
