@@ -307,6 +307,12 @@ a.home-images {
 
 }
 
+@media screen and (min-width: 760px) {
+    .home-add-btn {
+        font-size: x-large;
+    }
+  }
+
 
 
 
