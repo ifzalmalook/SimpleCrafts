@@ -6,17 +6,17 @@ W3 validator used to check for html errors https://validator.w3.org/nu/
 
 |Page | Link|Screenshot |Result|
 |:----------:|:----------:|:----------:|:----------:|
-| Home - not logged in|https://validator.w3.org/nu/?doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2F |![home](assets/test-images/unlogged-home.jpg)|No errors|
-Home-logged in| https://validator.w3.org/nu/?doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2F#textarea |![Home logged in](assets/test-images/logged-home.jpg)|No errors|
-Crafts Page| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fprojects%2F |![Crafts Page](assets/test-images/crafts-page.jpg)|No errors|
-Full Project Page - not logged in| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fbee-hotel%2F |![Full Project Page](assets/test-images/full-project-unlogged.jpg)|No errors|
-Full Project Page - authenticated (edit/delete) - validation errors due to richtext input| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fbee-hotel%2F#textarea |![Full Project Page - edit/delete](assets/test-images/full-proj-logged.jpg)|validation errors due to richtext input|
-Add Project Page - logged in| checked via text input |![Add Project Page](assets/test-images/add-proj.jpg)|No errors|
-Edit Project Page - logged in| checked via text input |![Edit Project Page](assets/test-images/edit-proj.jpg)|No errors|
-Delete Project Page - logged in| Checked via text input|![Delete Project Page](assets/test-images/delete.jpg)|No errors|
-Logout Page - logged in| Checked via text input|![Logout Page](assets/test-images/delete.jpg)|No errors|
-Register| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Faccounts%2Fsignup%2F|![Register Page](assets/test-images/register.jpg)|No errors|
-Login| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Faccounts%2Flogin%2F|![Login Page](assets/test-images/login.jpg)|No errors|
+| Home - not logged in|https://validator.w3.org/nu/?doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2F |![home page](assets/test-images/unlogged-home.jpg)|No errors|
+Home-logged in| https://validator.w3.org/nu/?doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2F#textarea |![Home page logged in](assets/test-images/logged-home.jpg)|No errors|
+Crafts Page| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fprojects%2F |![crafts list page](assets/test-images/crafts-page.jpg)|No errors|
+Full Project Page - not logged in| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fbee-hotel%2F |![full project page](assets/test-images/full-project-unlogged.jpg)|No errors|
+Full Project Page - authenticated (edit/delete) - validation errors due to richtext input| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Fprojects%2Fbee-hotel%2F#textarea |![Full project page with edit and delete buttons](assets/test-images/full-proj-logged.jpg)|validation errors due to richtext input|
+Add Project Page - logged in| checked via text input |![Add project page](assets/test-images/add-proj.jpg)|No errors|
+Edit Project Page - logged in| checked via text input |![Edit project page](assets/test-images/edit-proj.jpg)|No errors|
+Delete Project Page - logged in| Checked via text input|![Delete project page](assets/test-images/delete.jpg)|No errors|
+Logout Page - logged in| Checked via text input|![Logout page](assets/test-images/delete.jpg)|No errors|
+Register| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Faccounts%2Fsignup%2F|![Register account page](assets/test-images/register.jpg)|No errors|
+Login| https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsimple-crafts-b645ce9ac856.herokuapp.com%2Faccounts%2Flogin%2F|![Login page](assets/test-images/login.jpg)|No errors|
  
 ## CSS
 
@@ -32,15 +32,15 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 
 | File      | Screenshot |
 |-----------|------------|
-|simple_crafts settings.py   | ![main settings](assets/test-images/main-settings.jpg) |
-| simple_crafts urls.py    | ![main urls](assets/test-images/main-urls.jpg) |
-| home urls.py    | ![homeurls](assets/test-images/home-urls.jpg) |
-| home views.py    | ![home views](assets/test-images/home-views.jpg) |
-| projects admin.py    | ![projectsadmin](assets/test-images/projects-admin.jpg) |
-| projects forms.py    | ![projects forms](assets/test-images/projects-forms.jpg) |
-| projects models.py    | ![projects models](assets/test-images/projects-models.jpg) |
-| projects urls.py    | ![projects urls](assets/test-images/projects-urls.jpg) |
-| projects views.py    | ![projects views](assets/test-images/projects-views.jpg) |
+|simple_crafts settings.py   | ![main project settings](assets/test-images/main-settings.jpg) |
+| simple_crafts urls.py    | ![main project urls](assets/test-images/main-urls.jpg) |
+| home urls.py    | ![home app urls](assets/test-images/home-urls.jpg) |
+| home views.py    | ![home app views](assets/test-images/home-views.jpg) |
+| projects admin.py    | ![projects app admin](assets/test-images/projects-admin.jpg) |
+| projects forms.py    | ![projects app forms](assets/test-images/projects-forms.jpg) |
+| projects models.py    | ![projects app models](assets/test-images/projects-models.jpg) |
+| projects urls.py    | ![projects app urls](assets/test-images/projects-urls.jpg) |
+| projects views.py    | ![projects app views](assets/test-images/projects-views.jpg) |
 
 # Manual Testing
 
@@ -77,7 +77,7 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 | Like button |  Can be clicked to register a like and then clicked again to unlike | passed |
 | Like counter |  Number increases with more likes | passed |
 | Forms |  All forms can be submitted if valid information entered | passed |
-| Edit Form | All currently saved information for the particular project should be automatically populated in the edit form so that it can be reviewed and changed as necessary | The current image field on the edit form is not populated automatically and I had to add code to the edit page html and views so that it can be manually retrieved |
+| Edit Form | All currently saved information for the particular project should be automatically populated in the edit form so that it can be reviewed and changed as necessary | The current image field on the edit form is not populated automatically and code had to be added to the edit page html and views so that it can be manually retrieved |
 | Project title buttons | Buttons featuring the project title on the crafts page lead to full project details if logged in or to sign in page if not | passed |
 |Homepage images and project title buttons | These appear for non logged in users and lead to sign in form if clicked | passed |
 | Success Messages | Success messages appear at top of screen after a user registers, logs in, adds a project, edits/updates a project or deletes a project | passed |
@@ -93,21 +93,21 @@ Responsivity was tested using Chrome devtools to ensure all pages of the website
 
 Please note that the files have been compressed but there may still be slow loading 
 
-![Responsivity home](assets/gifs/responsiverhome-ezgif.com-optimize.gif)
+![Responsivity gif of home page](assets/gifs/responsiverhome-ezgif.com-optimize.gif)
 
-![Responsivity crafts page](assets/gifs/responsivecrafts-ezgif.com-optimize.gif)
+![Responsivity gif of crafts page](assets/gifs/responsivecrafts-ezgif.com-optimize.gif)
 
-![Responsivity full project page](assets/gifs/responsivefullproject-ezgif.com-optimize.gif)
+![Responsivity gif of full project page](assets/gifs/responsivefullproject-ezgif.com-optimize.gif)
 
-![Responsivity forms 1](assets/gifs/responsiveforms-ezgif.com-optimize.gif)
+![Responsivity gif of forms 1](assets/gifs/responsiveforms-ezgif.com-optimize.gif)
 
-![Responsivity forms 2](assets/gifs/responsiveregister-ezgif.com-optimize.gif)
+![Responsivity gif of forms 2](assets/gifs/responsiveregister-ezgif.com-optimize.gif)
 
 I checked desktop versions of Chrome, Microsoft Edge and Mozilla firefox manually, and also Chrome and Huawei native broswer on a Huawei P30 Pro mobile phone, all pages looked fine and buttons and links worked as they should. I did not have access to any Apple devices to check Safari.
 
 Initially there was an issue with how text was being rendered over the homepage images on firefox so the styling was changed and now the homepage renders properly on all browsers
 
-![Browser table](assets/test-images/browser-table.jpg)
+![Browser compatibility table](assets/test-images/browser-table.jpg)
 
 
 ## Lighthouse
@@ -123,15 +123,15 @@ Mobile results:
 
 **Crafts Page**
 
-![Crafts Page mobile](assets/test-images/crafts-lighthouse.jpg)
+![Crafts page mobile](assets/test-images/crafts-lighthouse.jpg)
 
 **Full Project**
 
-![Full Project mobile](assets/test-images/fullproject-lighthouse.jpg)
+![Full project mobile](assets/test-images/fullproject-lighthouse.jpg)
 
 **Add Project**
 
-![Add Project mobile](assets/test-images/add-proj-mob.jpg)
+![Add project mobile](assets/test-images/add-proj-mob.jpg)
 
 Desktop Results:
 
@@ -157,9 +157,9 @@ Desktop Results:
 
 If a user was to extend their text right to the end of the add or edit project form fields, this was causing text to extend outside the boundary of its container on the full project page.
 
-![Add form bug] (assets/test-images/bug-add-project.png)
+![Add form bug](assets/test-images/bug-add-project.png)
 
-![Uncontained text] (assets/test-images/bug-demo.jpg)
+![Uncontained text bug](assets/test-images/bug-demo.jpg)
 
 This was fixed by using word-wrap: break-word; in CSS to ensure that words would wrap to the next line when reaching end of container. 
 
@@ -167,7 +167,7 @@ This was fixed by using word-wrap: break-word; in CSS to ensure that words would
 
 The edit form is formatted with crispy forms and a class based UpdateView is used with it. All current information of the project populates the form automatically apart from the current image field and this remains blank.
 
-The current image field shows the current image name in the admin panel but not on the front end, I was not able to fix this but a workaround was to manually retrieve the current image and add it to the bottom of the form.
+The current image field shows the current image name in the admin panel but not on the front end, I was not able to fix this but a workaround was to manually retrieve the current image and add it to the bottom of the form. I was also able to hide the current image field on the edit form using CSS.
 
 ![Missing current image edit form](assets/test-images/formerror.png)
 

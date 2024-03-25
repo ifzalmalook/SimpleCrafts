@@ -171,7 +171,7 @@ Mobile and Tablet Full Project Page
 ## Colour Scheme
 
 
-![colour pallette](assets/readme-images/colours.jpg)
+![Colour pallette](assets/readme-images/colours.jpg)
 
 I used WebAIM contrast checker (https://webaim.org/) to ensure the colour scheme was suitable.
 
@@ -184,7 +184,7 @@ The Cambay font was selected and used in a range of weights, as it has an elegan
 
 The Agile methodology was used for planning and creation of this website. I set up a project kanban board using Github projects. The MoSCoW method was used to help prioritise features with a view to achieve MVP initially and then build further if possible. 
 
-![Kanban Board](assets/readme-images/kanban.jpg)
+![Kanban board](assets/readme-images/kanban.jpg)
 
 
 
@@ -217,17 +217,17 @@ The navbar features on all pages for consistency and includes links to the Logo,
 
 Desktop Navbar   
 
-![Navbar Desktop](assets/readme-images/navbardesk.jpg)
+![Navbar desktop](assets/readme-images/navbardesk.jpg)
 
 Toggle Navbar
 
-![Navbar Toggle](assets/readme-images/navtoggle.jpg)
+![Navbar toggle](assets/readme-images/navtoggle.jpg)
 
 Logged In User Navbar
 
 When a user is logged in, the Navbar shows logout instead of login/register
 
-![Navbar Logged In](assets/readme-images/loggednav.jpg)
+![Navbar logged in](assets/readme-images/loggednav.jpg)
 
 
 
@@ -260,7 +260,7 @@ The footer featurss on all pages and includes links to the relevant social media
 
 This page features the craft projects that have already been added to the website. They are arranged on cards, which have a feature image, number of likes, author, publish date and a large call to action button that features the title. Non registered users are able to browse this section in order to pique their interest and entice them to register. If they click on the titles then they will be redirected to the login page.
 
-![Crafts Page](assets/readme-images/craftpage.jpg)
+![Crafts page](assets/readme-images/craftpage.jpg)
 
 **Full Project Page**
 
@@ -270,7 +270,7 @@ Here they can see the full information for the project, including an image, desc
 
 If it is a project they have uploaded then they can also edit or delete the project. 
 
-![Full Project Page](assets/readme-images/fullproject.jpg)
+![Full project page](assets/readme-images/fullproject.jpg)
 
 
 **Like button**
@@ -279,7 +279,7 @@ On the full project page, logged in users can like or unlike a project, they wil
 
 **Like button when unliked**
 
-![Like button and Counter unliked](assets/readme-images/unliked.jpg)
+![Like button and counter before liking](assets/readme-images/unliked.jpg)
 
 **Like button after liking a project**
 
@@ -289,11 +289,11 @@ On the full project page, logged in users can like or unlike a project, they wil
 
 These buttons are only visible to the user who has uploaded this particular project and to any admin user as they will have superuser priveleges.
 
-![Edit and Delete Buttons](assets/readme-images/edanddelete.jpg)
+![Edit and delete buttons](assets/readme-images/edanddelete.jpg)
 
 If users click delete they are first taken to a screen that allows them to confirm they wish to delete the project before that action is completed, this can help avoid accidental deletions.
 
-![Confirm Delete](assets/readme-images/confirmdelete.jpg)
+![Confirm delete page](assets/readme-images/confirmdelete.jpg)
 
 **The Sign in Page**
 
@@ -301,25 +301,31 @@ Registered users can sign in here, this is also a page where non logged in users
 
 There is also a link for users to reach the registration page if they dont have an account
 
-![Sign In](assets/readme-images/signin.jpg)
+![Sign in page](assets/readme-images/signin.jpg)
 
 **Registration Page**
 
 New users can register here, and there is a link for already registered users to access the login page from here.
 
-![Register](assets/readme-images/register.jpg)
+![Registration page](assets/readme-images/register.jpg)
+
+**Logout**
+
+After clicking logout, users are taken to the logout confirmation page before being disconnected, to ensure that they do want to logout.
+
+![Logout warning](assets/readme-images/logout-warning.jpg)
 
 **Add Project Page**
 
 This page is only accessible by logged in users and here they can fill in a form to have their project added to the site
 
-![Add Project Page](assets/readme-images/addproject.jpg)
+![Add project page](assets/readme-images/addproject.jpg)
 
 **Success Messages**
 
 Users are shown success messages at the top of the screen to confirm that they have registered, signed in, added a project, edited/updated a project or deleted a project.
 
-![Success Messages](assets/readme-images/successmessage.jpg)
+![Success messages](assets/readme-images/successmessage.jpg)
 
 **Customised 404 and 403 error pages**
 
@@ -384,7 +390,7 @@ Code Institute python linter - used to validate python code
 
 ## Testing 
 
-[Link to Testing document](testing.md)
+[Link to testing document](testing.md)
 
 
 ## Deployment
@@ -437,4 +443,6 @@ All project instructions etc were designed by Chat GPT, which also helped with s
 The logo was created for free on this website:
 
 https://logo.com/
+
+Thanks to Martin the coding coach for helping with the workaround for the current image not populating on edit form.
 
