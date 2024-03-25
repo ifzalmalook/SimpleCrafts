@@ -68,17 +68,21 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 
 
 | Feature  |  Expected Outcome | Outcome |
-|--------|--------|------------------|---------|
+|--------|--------|------------------|
 | Logo | Returns to Homepage when clicked | Passed|
 | Sign up button on homepage| Opens sign up form | passed |
 | Navbar Links |  All lead to relevant pages when clicked | passed |
-| Footer links |  Relevant website opened in new page | passed |
+| Footer links |  Relevant website opens in new page | passed |
 | Authentication |  If non logged in users try to access a page where authentication is necessary they are redirected to sign in | passed |
 | Like button |  Can be clicked to register a like and then clicked again to unlike | passed |
 | Like counter |  Number increases with more likes | passed |
 | Forms |  All forms can be submitted if valid information entered | passed |
-
-
+| Edit Form | All currently saved information for the particular project should be automatically populated in the edit form so that it can be reviewed and changed as necessary | The current image field on the edit form is not populated automatically and I had to add code to the edit page html and views so that it can be manually retrieved |
+| Project title buttons | Buttons featuring the project title on the crafts page lead to full project details if logged in or to sign in page if not | passed |
+|Homepage images and project title buttons | These appear for non logged in users and lead to sign in form if clicked | passed |
+| Success Messages | Success messages appear at top of screen after a user registers, logs in, adds a project, edits/updates a project or deletes a project | passed |
+| 404 page | If user tries to access an invalid page that doesnt exist they are redirected to 404 error page and from here they can click a button to return to home screen | passed |
+ 
 
 
 
@@ -103,3 +107,39 @@ I checked desktop versions of Chrome, Microsoft Edge and Mozilla firefox manuall
 Initially there was an issue with how text was being rendered over the homepage images on firefox so the styling was changed and now the homepage renders properly on all browsers
 
 ![Browser table](assets/test-images/browser-table.jpg)
+
+
+# Bugs
+
+**Text-overflow error**
+
+If a user was to extend their text right to the end of the add or edit project form fields, this was causing text to extend outside the boundary of its container on the full project page.
+
+![Add form bug] (assets/test-images/bug-add-project.png)
+
+![Uncontained text] (assets/test-images/bug-demo.jpg)
+
+This was fixed by using word-wrap: break-word; in CSS to ensure that words would wrap to the next line when reaching end of container. 
+
+**Edit Form Bug**
+
+The edit form is formatted with crispy forms and a class based UpdateView is used with it. All current information of the project populates the form automatically apart from the current image field and this remains blank.
+
+The current image field shows the current image name in the admin panel but not on the front end, I was not able to fix this but a workaround was to manually retrieve the current image and add it to the bottom of the form.
+
+![Missing current image edit form](assets/test-images/formerror.png)
+
+
+![Current image edit form](assets/test-images/editpic.jpg)
+
+**Integrity Error**
+
+Initially I had the project model title set to be unique as I assumed this would ensure slugs generated from the title would also be unique. However I realised that the front end add project form was case sensitive e.g if a project titled Test already existed then it would still allow submission of test, which would then cause an integrity error with identical slug, as slug field was also set to unqiue in the model and this was necessary as slug is being used for url generation.
+
+To overcome this I changed the slug to be generated using UUID instead of title to ensure uniqueness. This also allowed me to remove unique=True from the title field in the model so different users can post a project with the same title as they may have a different set of materials, instructions etc.
+
+**Search bug**
+
+When performing a search, if the keywords did not match any entries, the full project list on the crafts page was supposed to be shown, but the queryset returned was empty instead so I used an If statement to show no results found if queryset empty and a back button to return to the crafts list. 
+
+![Search no results](assets/test-images/searchbug.jpg)

@@ -122,7 +122,8 @@ class EditProject(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         obj = self.get_object()
-        return self.request.user == obj.author
+        return (self.request.user == obj.author 
+                or self.request.user.is_superuser)
 
     def get_context_data(self, **kwargs):
         context = super(EditProject, self).get_context_data(**kwargs)
