@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import (CreateView, ListView, DeleteView, UpdateView)
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import PermissionDenied
 from django.db.models import Q
 from .models import Project
 from .forms import ProjectForm
@@ -120,7 +121,8 @@ class EditProject(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         obj = self.get_object()
         return (self.request.user == obj.author 
                 or self.request.user.is_superuser)
-
+    
+    
     def get_context_data(self, **kwargs):
         context = super(EditProject, self).get_context_data(**kwargs)
         if 'form' not in context:
