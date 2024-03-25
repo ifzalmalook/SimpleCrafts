@@ -15,8 +15,14 @@
     font-size : x-large;
 }
 
+.active {
+    border-bottom: 1px solid black;
+    font-weight: 400px;
+}
 
-
+a.nav-link {
+    padding-bottom: 4px;
+}
 /* Keep footer at bottom */
 
 html, body {
@@ -58,9 +64,7 @@ footer {
 
 
 .card-img-top {
-    /* height: 400px; */
     max-width: 100%; /* Ensure the image does not exceed the container width */
-    /* object-fit: contain; Maintain aspect ratio and fit the entire image within the container */
 }
 
 /* Styling for card border */
@@ -118,7 +122,7 @@ hr {
     border: solid 2px purple;
 }
 
-/* Porject page title styling */
+/* Project page title styling */
 
 .masthead {
     margin-top: 10px;
@@ -170,7 +174,7 @@ hr {
         align-items: center;
         }
 
-.button-hero {
+.button-jumbo {
 	border-radius:10px;
 	border:1px solid black;
 	display:inline-block;
@@ -183,18 +187,18 @@ hr {
     background-color: orange;
 }
 
-.jumbotron .button-hero:hover {
+.jumbotron .button-jumbo:hover {
 	color:yellow;
     background-color: black;
     border:1px solid black;
     text-decoration: none;
 }
 
-.button-hero h3 {
+.button-jumbo h3 {
     color: orange;
 }
 
-#hero-text {
+#jumbo-text {
     color: orange;
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.466);
@@ -224,27 +228,13 @@ a.home-images {
     text-decoration: none;
     
 }
-    
-/* .centered {
-        width: 215%;
-        background-color: #000000c9;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        color: orange;  
-        font-size: large ; 
-        
-    } */
+
     
 .add {
     display: block;
 }
 
-    /* card titles on projects page */
+/* card titles on projects page */
 
 .card-info {
     font-size: large;

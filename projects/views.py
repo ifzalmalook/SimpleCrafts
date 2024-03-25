@@ -54,10 +54,7 @@ class AddProject(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         # Generate a UUID and assign it as the slug
         form.instance.slug = str(uuid.uuid4())
-
-        # Display success message
         messages.success(self.request, "Your project has been added!")
-
         return super().form_valid(form)
 
 
@@ -90,12 +87,11 @@ def full_project(request, slug):
             project.likes.add(user)
             has_liked = True
 
-    # Pass the project object to the template context
     return render(
         request,
         "projects/full_project.html",
         {"project": project,
-         "has_liked": has_liked}  # Use the correct variable name here
+         "has_liked": has_liked}  
     )
 
 
