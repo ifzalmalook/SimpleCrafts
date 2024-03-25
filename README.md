@@ -409,7 +409,7 @@ Then I opened the repository in a Gitpod workspace for editing
 
 I followed the instructions on the Code Institute Django Deployment Instructions 2024 to set up Django and deploy to Heroku 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://simple-crafts-b645ce9ac856.herokuapp.com/
 
 
 ## Credits 
