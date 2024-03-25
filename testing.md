@@ -109,6 +109,47 @@ Initially there was an issue with how text was being rendered over the homepage 
 ![Browser table](assets/test-images/browser-table.jpg)
 
 
+## Lighthouse
+
+Lighthouse testing was performed in Chrome devtools
+
+
+Mobile results:
+
+**Homepage**
+
+![Homepage mobile](assets/test-images/homelighthouse.jpg)
+
+**Crafts Page**
+
+![Crafts Page mobile](assets/test-images/crafts-lighthouse.jpg)
+
+**Full Project**
+
+![Full Project mobile](assets/test-images/fullproject-lighthouse.jpg)
+
+**Add Project**
+
+![Add Project mobile](assets/test-images/add-proj-mob.jpg)
+
+Desktop Results:
+
+**Homepage**
+
+![Homepaeg desktop](assets/test-images/lighthouse-home.jpg)
+
+**Crafts Page**
+
+![Crafts page desktop](assets/test-images/lighthouse-crafts.jpg)
+
+**Full Project**
+
+![Full project desktop](assets/test-images/full-lighthouse-desk.jpg)
+
+**Add Project**
+
+![Add project desktop](assets/test-images/add-lighthouse-desk.jpg)
+
 # Bugs
 
 **Text-overflow error**

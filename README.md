@@ -431,3 +431,7 @@ https://www.bing.com/images/create
 
 All project instructions etc were designed by Chat GPT, which also helped with some debugging and general queries
 
+The logo was created for free on this website:
+
+https://logo.com/
+
