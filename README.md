@@ -7,6 +7,8 @@ The site will feature all the information needed to craft the featured projects,
 
 ![Home page responsive](assets/readme-images/responsivemain.jpg)
 
+[Link to deployed site](https://simple-crafts-b645ce9ac856.herokuapp.com/)
+
 # UX
 
 The website is mainly geared towards adults who would like to carry out some diy craft projects, however a 'kids' category is also included in the modedls so that parents can also carry out fun activities with their children.
@@ -319,11 +321,15 @@ Users are shown success messages at the top of the screen to confirm that they h
 
 ![Success Messages](assets/readme-images/successmessage.jpg)
 
-**Customised 404 page**
+**Customised 404 and 403 error pages**
 
 For a better user experience, if a user ends up at an invalid page they are taken to a 404 error page from where they can click a button to return to the homepage
 
-![404 page](assets/test-images/404error.jpg)
+![404 page](assets/readme-images/404error.png)
+
+Although the edit and delete buttons are hidden from users who are not admin or authors of the post, they could try and access via the address bar, they will be directed to the 403 forbidden page from where they can return to homepage
+
+![403 error](assets/readme-images/403error.jpg)
 
 **Search Bar**
 
@@ -332,9 +338,6 @@ Users are able to search using keywords featured in the title, description or ca
 ![Search bar](assets/readme-images/searchbar.jpg)
 
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
@@ -350,6 +353,8 @@ Balsamiq - to create site wireframes.
 
 Lucidcharts - to create ERD and flow chart
 
+Git used for version control
+
 GitHub - Holds the repository of my project, GitHub connects to GitPod and Heroku.
 
 GitPod – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository.
@@ -360,9 +365,9 @@ Django - This framework was used to build the foundations of this project
 
 Gunicorn - Gunicorn is a pure-Python HTTP server for WSGI applications.
 
-Bootstrap - used for styling the website
+Bootstrap - used for styling the website.
 
-Cloudinary - Used to store images online for the recipe posts.
+Cloudinary - Used to host images.
 
 Google Fonts - provide fonts for the website.
 
@@ -375,8 +380,6 @@ W3C Markup Validator - used to validate HTML
 W3C CSS Validator - used to validate CSS
 
 Code Institute python linter - used to validate python code
-
- 
 
 
 ## Testing 

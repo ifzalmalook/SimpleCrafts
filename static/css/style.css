@@ -35,7 +35,6 @@ body {
     background-color: white;
     font-family: Cambay, sans-serif;
     color: black;
-
 }
 
 .inline-p {
@@ -80,9 +79,7 @@ footer {
 
 .clickable {
     background-color:  rgba(0, 0, 0, 0.729);
-    
     border: 3px solid orange;
-
     color: orange;
     border-radius: 10px;
     text-decoration: none;
@@ -161,18 +158,6 @@ hr {
     justify-content: center;
     align-items: center;
     }
-
-.jumbotron-container-logged {
-        background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
-        background-color: rgba(0, 0, 0, 0.408);
-        background-blend-mode: overlay;
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
 
 .button-jumbo {
 	border-radius:10px;
@@ -308,7 +293,7 @@ a.home-images {
         background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710948486/banner_image_gazfp0.jpg");
         background-color: rgba(0, 0, 0, 0.36);
         background-blend-mode: overlay;
-        height: 900px;
+        height: 700px;
         background-size: cover;
         background-position: center;
         display: flex;

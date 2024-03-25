@@ -82,6 +82,7 @@ I used the CI Python Linter https://pep8ci.herokuapp.com/# on all my .py files. 
 |Homepage images and project title buttons | These appear for non logged in users and lead to sign in form if clicked | passed |
 | Success Messages | Success messages appear at top of screen after a user registers, logs in, adds a project, edits/updates a project or deletes a project | passed |
 | 404 page | If user tries to access an invalid page that doesnt exist they are redirected to 404 error page and from here they can click a button to return to home screen | passed |
+| 403 page | If user tries to perform an action or reach an area they are not authorised for, such as editing or deleting a project they are not the author of, they are redirected to the 403 error page and from here they can click a button to return to home screen | passed |
  
 
 
@@ -136,7 +137,7 @@ Desktop Results:
 
 **Homepage**
 
-![Homepaeg desktop](assets/test-images/lighthouse-home.jpg)
+![Homepage desktop](assets/test-images/lighthouse-home.jpg)
 
 **Crafts Page**
 
